@@ -1,6 +1,6 @@
-LeetCode Probelms
+LeetCode
 ===
-Some **accepted** codes of LeetCode problems
+Some free **accepted** codes of LeetCode problems
 ##### Simple #####
 - [x] 1. TwoSum (Improved already)
 - [x] 167. Sum II - Input array is sortedTwo(Improved already) 
