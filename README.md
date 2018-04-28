@@ -1,4 +1,4 @@
-LetCode
+LeetCode Probelms
 ===
 Some **accepted** codes of LeetCode problems
 ##### Simple #####
