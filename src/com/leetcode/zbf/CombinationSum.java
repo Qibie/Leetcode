@@ -5,42 +5,42 @@ package com.leetcode.zbf;
  */
 
 
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class CombinationSum {
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        if (candidates == null || candidates.length == 0) {
-            return null;
-        }
-        Set<List<Integer>> result = new HashSet<>();
-        Arrays.sort(candidates);
-        return new ArrayList<>(result);
+   public List<List<Integer>> combinationSum(int []cadidates,int target){
+       if(cadidates==null || cadidates.length<=0){
+           return null;
+       }
+       List<List<Integer>> result=new ArrayList<>();
+       List<Integer> temp=new ArrayList<>();
+       dfs(result,temp,cadidates,target,0);
+       return result;
+   }
+    public static void dfs(List<List<Integer>>result,List<Integer> temp,int [] cadidates,int target,int j){
+       if(target==0){
+           result.add(new ArrayList<>(temp));
+           return;
+       }
+       for(int i=j;i<cadidates.length && target<=cadidates[i];i++){
+
+           temp.add(cadidates[i]);
+           dfs(result,temp,cadidates,target-cadidates[i],i);
+           temp.remove(temp.size()-1);
+       }
     }
 
-
-    public static void get2sSum(int[] cadidates, int target, int head, int tail, List<Integer> result) {
-        if (cadidates[head] < target) {
-            return;
-        }
-        if (cadidates[head] == target) {
-            result.add(cadidates[head]);
-        }
-        Set<List<Integer>> set = new HashSet<>();
-        while (head < tail) {
-            while (head < tail && (cadidates[head] + cadidates[tail] < target)) {
-                ++head;
-            }
-            while (head < tail && (cadidates[head] + cadidates[tail] > target)) {
-                --tail;
-            }
-            if (head < tail && (cadidates[head] + cadidates[tail] == target)){
-                result.add(cadidates[head]);
-                result.add(cadidates[tail]);
-                  
-            }
-        }
+    public static void main(String[] args) {
+       List<Integer> temp=new ArrayList<>(Arrays.asList(1,2,3));
+       List<List<Integer>> result=new ArrayList<>();
+       result.add(new ArrayList<>(temp));
+       System.out.println(result.get(0));
+       temp.add(2,4);
+       System.out.println(result.get(0));
     }
-
 
 }
 
