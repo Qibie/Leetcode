@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fa319d-a2f9-457c-8ca1-5d78d49ec659" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/zbf/CombinationSumII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/zbf/FirstMissingPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/zbf/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/zbf/CombinationSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/zbf/TrappingRainWater.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +38,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstMissingPositive.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FirstMissingPositive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leetcode/zbf/FirstMissingPositive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="38" column="20" selection-start-line="35" selection-start-column="14" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="324">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrappingRainWater.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/leetcode/zbf/TrappingRainWater.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/com/leetcode/zbf/CombinationSum.java" />
         <option value="$PROJECT_DIR$/src/com/leetcode/zbf/CombinationSumII.java" />
         <option value="$PROJECT_DIR$/src/com/leetcode/zbf/FirstMissingPositive.java" />
+        <option value="$PROJECT_DIR$/src/com/leetcode/zbf/TrappingRainWater.java" />
       </list>
     </option>
   </component>
@@ -145,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FirstMissingPositive">
+  <component name="RunManager" selected="Application.TrappingRainWater">
     <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.zbf.CombinationSum" />
       <module name="Leetcode" />
@@ -170,6 +173,17 @@
     </configuration>
     <configuration name="FirstMissingPositive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.zbf.FirstMissingPositive" />
+      <module name="Leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.zbf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.zbf.TrappingRainWater" />
       <module name="Leetcode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -224,9 +238,11 @@
       <item itemvalue="Application.CombinationSum" />
       <item itemvalue="Application.CombinationSumII" />
       <item itemvalue="Application.FirstMissingPositive" />
+      <item itemvalue="Application.TrappingRainWater" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrappingRainWater" />
         <item itemvalue="Application.FirstMissingPositive" />
         <item itemvalue="Application.CombinationSumII" />
         <item itemvalue="Application.CombinationSum" />
@@ -245,16 +261,15 @@
       <updated>1525679759539</updated>
       <workItem from="1525679762008" duration="949000" />
       <workItem from="1525782368371" duration="1729000" />
-      <workItem from="1525784604377" duration="16143000" />
+      <workItem from="1525784604377" duration="22039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18821000" />
+    <option name="totallyTimeSpent" value="24717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-319" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -266,11 +281,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32963374" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32963374" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32741398" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24517168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24517168" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -318,8 +333,14 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/zbf/TrappingRainWater.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -365,8 +386,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leetcode/zbf/FirstMissingPositive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="38" column="20" selection-start-line="35" selection-start-column="14" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="324">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetcode/zbf/TrappingRainWater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
         </state>
       </provider>
     </entry>
