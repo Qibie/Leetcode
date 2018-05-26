@@ -8,7 +8,7 @@ import java.util.Map;
  * @author qibie-pc
  * @date 2018-04-28
  */
-class Solution {
+class Two Sum II - Input array is sorted {
     public int[] twoSum(int[] numbers, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for(int i = 0; i < numbers.length; i++){
