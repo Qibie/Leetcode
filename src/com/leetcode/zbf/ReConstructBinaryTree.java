@@ -1,24 +1,24 @@
 package com.leetcode.zbf;
 
-class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x ){ val=x;}
-
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder=new StringBuilder();
-        if(left!=null){
-            stringBuilder.append(left.toString());
-        }
-        stringBuilder.append(val);
-        if(right!=null){
-            stringBuilder.append(right.toString());
-        }
-        return stringBuilder.toString();
-    }
-}
+//class TreeNode{
+//    int val;
+//    TreeNode left;
+//    TreeNode right;
+//    TreeNode(int x ){ val=x;}
+//
+//    @Override
+//    public String toString() {
+//        StringBuilder stringBuilder=new StringBuilder();
+//        if(left!=null){
+//            stringBuilder.append(left.toString());
+//        }
+//        stringBuilder.append(val);
+//        if(right!=null){
+//            stringBuilder.append(right.toString());
+//        }
+//        return stringBuilder.toString();
+//    }
+//}
 
 
 public class ReConstructBinaryTree {
