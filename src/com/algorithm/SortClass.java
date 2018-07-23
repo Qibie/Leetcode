@@ -3,6 +3,8 @@ package com.algorithm;
 import org.omg.IOP.ComponentIdHelper;
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
+import java.util.Arrays;
+
 /**
  * Created by curry on 2018/2/20.
  */
@@ -185,6 +187,7 @@ public class SortClass {
 
     /**
      * 快速排序
+     *
      * @param a
      */
     public static void QuickSort(Comparable[] a, int low, int high) {
@@ -196,14 +199,40 @@ public class SortClass {
     }
 
 
+    public static void MergeSort(int[] array) {
+        if (array == null || array.length <= 1) {
+            return;
+        }
+        MergeSortRecurrsion(array, 0, array.length - 1);
+    }
 
+    public static void MergeSortRecurrsion(int[] array, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int mid = (start + end) / 2;
+        MergeSortRecurrsion(array, start, mid);
+        MergeSortRecurrsion(array, mid + 1, end);
+        int[] array_copy = new int[end - start + 1];
+        int step = 0, start_before = start, start_after = mid + 1;
+        while (start_before <= mid && start_after <= end) {
+            array_copy[step++] = (array[start_before] <= array[start_after]) ? array[start_before++] : array[start_after++];
+        }
+        while (start_before <= mid) {
+            array_copy[step++] = array[start_before++];
+        }
+        while (start_after <= end) {
+            array_copy[step++] = array[start_after++];
+        }
+        for (int i = start; i <= end; ++i) {
+            array[i] = array_copy[i - start];
+        }
+    }
 
     public static void main(String[] args) {
-        Integer[] a = new Integer[]{6, 5, 3, 1, 8, 7, 2, 4};
-        show(a);
-        QuickSort(a,0,a.length-1);
-        show(a);
-
+        int [] a = new int[]{6, 5, 3, 1, 8, 7, 2, 4};
+        MergeSort(a);
+        System.out.println(Arrays.toString(a));
     }
 
 }

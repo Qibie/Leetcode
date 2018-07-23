@@ -265,7 +265,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] A = {20, 50, 20, 40, 70, 10, 80, 30, 60};
         int[] temp = new int[A.length];
-        new BubbleSort().quickSort(A, 0,A.length - 1);
+        new BubbleSort().heapsort(A, A.length - 1);
         System.out.println(Arrays.toString(A));
     }
 
