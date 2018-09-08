@@ -6,6 +6,7 @@ Some free **accepted** codes of LeetCode problems
 - [x] 7. Reverse Integer
 - [x] 9. Palindrome Number
 - [x] 13. Roman to Integer
+- [ ] 14. Longest Common Prefix
 - [x] 167. Sum II - Input array is sortedTwo(Improved already) 
 - [x] 371. Sum of Two Integers
 - [ ] Sum IV - Input is a BST
